@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(263deg, rgba(209,23,227,1) 0%, rgba(0,0,0,1) 48%, rgba(21,30,219,1) 100%);
+
+}
+.slideshow {
+    height: 420px;
+    width: 735px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 15px 15px 5px 2px rgba(102, 70, 248, 0.85);
+}
+.slideshow .slide img {
+    height: 100%;
+    width: 100%;
+}
+.navigation {
+    position: absolute;
+    bottom: 150px;
+    left: 310px;
+    display: flex;
+}
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+.bar:hover {
+    background-color: rgb(222, 103, 252);
+}
+input {
+  display: none;
+}
+.slides-lista {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+} 
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+} 
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+} 
+#slide5:checked ~ .s1 {
+    margin-left: -100%;
+}
+.titulo{
+    margin-top: 20px;
+    font-size: 2em;
+    color: rgba(43, 238, 252);
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    border: 5px solid rgba(43, 238, 252);
+    padding: 10px 10px;
+    box-shadow: 0 0 32px rgb(43, 238, 252);
+    border-radius: 20px;
+    text-shadow: 0 0 18px rgb(43, 238, 252), 0 0 19px rgba(43, 238, 252);
+}
+.container img{
+    width: 80px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1360px;
+    margin: 0 auto;
+    position: absolute;
+}
+footer .container .contatos{
+    position: absolute;
+    margin-left: 1116px;
+    border: 2px solid rgb(43, 238, 252);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(43, 238, 252);
+    box-shadow: 0 0 32px rgb(43, 238, 252);
+    text-shadow: 0 0 18px rgb(43, 238, 252), 0 0 19px rgba(43, 238, 252);
+    font-size: 3ch;
+}
+footer .container .jogos{
+    position: absolute;
+    border: 2px solid rgb(43, 238, 252);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(43, 238, 252);
+    box-shadow: 0 0 32px rgb(43, 238, 252);
+    text-shadow: 0 0 18px rgb(43, 238, 252), 0 0 19px rgba(43, 238, 252);
+    font-size: 3ch;
+}
